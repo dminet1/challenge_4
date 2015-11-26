@@ -1,0 +1,116 @@
+body {
+  font-family: cursive, fantasy, arial, sans-serif;
+}
+/*--------*/
+/* entête */
+/*--------*/
+header {
+  background-color: #4183d7;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 1px;
+}
+#qualite {
+  font-size: 1em;
+}
+/*---------------------*/
+/* barre de navigation */
+/*---------------------*/
+nav {
+  background-color: #59ABE3;
+  width: 100%;
+  text-align: center;
+  padding: 1px;
+}
+.navli {
+  display: inline-block;
+  padding-right: 3%;
+}
+.lien {
+  color: white;
+  font-weight: bold;
+  list-style-type: none;
+  text-decoration: none;
+}
+.lien:hover {
+  color: #2C3E50;
+}
+.lien:focus {
+  color: #2C3E50;
+}
+#lien_portfolio {
+  color: #2C3E50;
+}
+#lien_about {
+  color: #2C3E50;
+}
+#lien_contact {
+  color: #2C3E50;
+}
+/*-----------------*/
+/* corps des pages */
+/*-----------------*/
+.corps {
+  width: 70%;
+  color: gray;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
+}
+    /* page portfolio */
+#portfolio_corps {
+  width: 90%;
+  color: gray;
+  text-align: center;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+table {
+  width: 45%;
+  position: relative;
+  margin: auto;
+}
+table img {
+  width: 250px;
+  height: 150px;
+}
+.text_img {
+  background-color: #ECECEC;
+}
+    /* page à propos */
+#about_photo {
+  width: 200px;
+  height: 150px;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+    /* page contact */
+.contact_img {
+  width: 20px;
+  height: 20px;
+}
+#contact_phone {
+  color: #52B3D9;
+}
+.contact_coordo {
+  color: #52B3D9;
+  text-decoration: none;
+}
+/*--------------*/
+/* pied de page */
+/*--------------*/
+footer {
+  width: 100%;
+  color: gray;
+  text-align: center;
+  opacity: 0.5;
+}
+footer img {
+  width: 25px;
+  height: 25px;
+  padding: 0.5%;
+}
