@@ -9,7 +9,7 @@ header {
   width: 100%;
   color: white;
   text-align: center;
-  padding: 1px;
+  padding: 0.06em;
 }
 #qualite {
   font-size: 1em;
@@ -21,7 +21,7 @@ nav {
   background-color: #59ABE3;
   width: 100%;
   text-align: center;
-  padding: 1px;
+  padding: 0.06em;
 }
 .navli {
   display: inline-block;
@@ -73,16 +73,16 @@ table {
   margin: auto;
 }
 table img {
-  width: 250px;
-  height: 150px;
+  width: 16em; /* 250 px */
+  height: 10em; /* 150 px */
 }
 .text_img {
   background-color: #ECECEC;
 }
     /* page à propos */
 #about_photo {
-  width: 200px;
-  height: 150px;
+  width: 12.5em; /* 200px */
+  height: 10em; /* 150px */
   border-radius: 100%;
   display: block;
   margin-left: auto;
@@ -90,8 +90,8 @@ table img {
 }
     /* page contact */
 .contact_img {
-  width: 20px;
-  height: 20px;
+  width: 1.25em; /*20px */
+  height: 1.25em; /* 20px */
 }
 #contact_phone {
   color: #52B3D9;
@@ -110,7 +110,7 @@ footer {
   opacity: 0.5;
 }
 footer img {
-  width: 25px;
-  height: 25px;
+  width: 1.6em; /* 25px */
+  height: 1.6em; /* 25px */
   padding: 0.5%;
 }
