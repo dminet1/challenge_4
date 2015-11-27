@@ -59,22 +59,17 @@ nav {
   padding-top: 1%;
   padding-bottom: 1%;
 }
-/*table {
+table {
   width: 45%;
   position: relative;
   margin: auto;
-}*/
-#div_autumn, #div_winter, #div_spring, #div_summer {
-  display: inline-block;
-  margin: 0.3%;
 }
-img {
+table img {
   width: 16em; /* 250 px */
   height: 10em; /* 150 px */
 }
 .text_img {
   background-color: #ECECEC; /* White smoke */
-  margin-top: -0.3%;
 }
     /* page à propos */
 #about_photo {
