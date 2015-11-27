@@ -1,11 +1,15 @@
+/* nom du projet : site_perso */
+/* description : 3 pages (portfolio, à propos, contact) */
+/* entête, barre de navigation et pied de page communs aux 3 pages */
+/* date : 27/11/2015 */
 body {
-  font-family: cursive, fantasy, arial, sans-serif;
+  font-family: 'cursive', 'fantasy', arial, sans-serif;
 }
 /*--------*/
 /* entête */
 /*--------*/
 header {
-  background-color: #4183d7;
+  background-color: #4183D7; /* Royal blue */
   width: 100%;
   color: white;
   text-align: center;
@@ -18,7 +22,7 @@ header {
 /* barre de navigation */
 /*---------------------*/
 nav {
-  background-color: #59ABE3;
+  background-color: #59ABE3; /* Picton blue */
   width: 100%;
   text-align: center;
   padding: 0.06em;
@@ -33,20 +37,8 @@ nav {
   list-style-type: none;
   text-decoration: none;
 }
-.lien:hover {
-  color: #2C3E50;
-}
-.lien:focus {
-  color: #2C3E50;
-}
-#lien_portfolio {
-  color: #2C3E50;
-}
-#lien_about {
-  color: #2C3E50;
-}
-#lien_contact {
-  color: #2C3E50;
+.lien:hover, .lien:focus, #lien_portfolio, #lien_about, #lien_contact {
+  color: #2C3E50; /* Madison blue */
 }
 /*-----------------*/
 /* corps des pages */
@@ -77,7 +69,7 @@ table img {
   height: 10em; /* 150 px */
 }
 .text_img {
-  background-color: #ECECEC;
+  background-color: #ECECEC; /* White smoke */
 }
     /* page à propos */
 #about_photo {
@@ -94,10 +86,10 @@ table img {
   height: 1.25em; /* 20px */
 }
 #contact_phone {
-  color: #52B3D9;
+  color: #52B3D9; /* Shakespeare blue */
 }
 .contact_coordo {
-  color: #52B3D9;
+  color: #52B3D9; /* Shakespeare blue */
   text-decoration: none;
 }
 /*--------------*/
