@@ -127,7 +127,10 @@
       </div>
     </div>
     <div class="col-sm-offset-1 col-md-offset-1 col-lg-offset-1 col-sm-3 col-md-3 col-lg-3 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-      <a id="textCharg" class="btn btn-success" data-loading-text ="Chargement en cours ...">Texte à charger</a>
+      <a id="textCharg" class="btn btn-success" data-loading-text="Chargement en cours ...">Texte à charger</a>
+      <p id="fileContent">
+        <span>Aucun fichier chargé</span>
+      </p>
     </div>
   </div>
 
@@ -148,6 +151,7 @@
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script>
+/* count display function for carousel */
 function affichage() {
   var total = $('.item').length;
   var current = $('.item.active').index() + 1;
@@ -159,19 +163,44 @@ $(function () {
     affichage();
   });
 });
+/* dropdown */
 $('h6').mouseover(function() {
   $(this).dropdown('toggle');
 });
+/* load in progress */
 $(function (){
   $('#textCharg').click(function () {
     with($(this)) {
       button('loading');
       setTimeout(function () {
         button('reset');
-      }, 4000);
+      }, 1000);
     }
   })
 });
+/* function to load a file with ajax */
+function loadFile(file) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET',file);
+  xhr.addEventListener('readystatechange',function(){
+      /*alert('xhr.readyState = ' + xhr.readyState + ' xhr.status = ' + xhr.status);*/
+      if(xhr.readyState === 4 && xhr.status === 200) {
+        document.getElementById('fileContent').innerHTML = '<span>' + xhr.responseText + '</span>';
+      }
+  },false);
+  xhr.send(null);
+};
+(function() {
+  document.getElementById('textCharg').addEventListener('click',function() {
+    loadFile('file1.txt');
+    var updateTextCharg = document.getElementById('textCharg');
+    updateTextCharg.innerHTML = "Texte chargé";
+    updateTextCharg.className = "";
+    updateTextCharg.style.backgroundColor = "#449D44";
+    updateTextCharg.style.color = "white";
+    updateTextCharg.style.textDecoration = "none";
+  },false);
+})();
 </script>
 
 </body>
